@@ -6,9 +6,9 @@
   description: A lightweight armored suit designed for excavation work.
   components:
   - type: Sprite
-    sprite: GreyStation/Clothing/OuterClothing/Hardsuits/explorer.rsi
+    sprite: GreyStation/Clothing/OuterClothing/Armor/explorer.rsi
   - type: Clothing
-    sprite: GreyStation/Clothing/OuterClothing/Hardsuits/explorer.rsi
+    sprite: GreyStation/Clothing/OuterClothing/Armor/explorer.rsi
   - type: Armor
     modifiers:
       coefficients:
