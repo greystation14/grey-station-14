@@ -1,0 +1,21 @@
+- type: entity
+  name: large wood floor
+  parent: FloorTileItemBase
+  id: FloorTileItemWoodLarge
+  components:
+  - type: Sprite
+    sprite: GreyStation/Objects/Tiles/tile.rsi
+    state: wood-large
+  - type: Item
+    heldPrefix: wood
+    sprite: GreyStation/Objects/Tiles/tile.rsi
+    size: Normal
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorWoodLarge
+  - type: Stack
+    stackType: FloorTileWoodLarge
+  - type: Construction
+    graph: TileWoodLarge
+    node: woodtilelarge
