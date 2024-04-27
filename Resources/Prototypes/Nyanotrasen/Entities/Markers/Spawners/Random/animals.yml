@@ -26,7 +26,6 @@
       - MobPossumOld
       - MobRaccoon
       - MobFox
-      - MobArcticFox
       - MobCat
     chance: 1
     rarePrototypes:
