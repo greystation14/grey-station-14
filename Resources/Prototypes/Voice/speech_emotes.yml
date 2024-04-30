@@ -78,30 +78,30 @@
     - chortling.
     - chortling!
 
-- type: emote
-  id: Honk
-  name: chat-emote-name-honk
-  category: Vocal
-  icon: Interface/Actions/scream.png
-  whitelist:
-    requireAll: true
-    components:
-    - Vocal
-    - BorgChassis
-  chatMessages: ["chat-emote-msg-honk"]
-  chatTriggers:
-    - honk
-    - honk.
-    - honk!
-    - honks
-    - honks.
-    - honks!
-    - honked
-    - honked.
-    - honked!
-    - honking
-    - honking.
-    - honking!
+#- type: emote GreyStation Removal
+ # id: Honk
+ # name: chat-emote-name-honk
+#  category: Vocal
+#  icon: Interface/Actions/scream.png
+#  whitelist:
+#    requireAll: true
+#    components:
+#    - Vocal
+#    - BorgChassis
+#  chatMessages: ["chat-emote-msg-honk"]
+#  chatTriggers:
+#    - honk
+#    - honk.
+#    - honk!
+#    - honks
+#    - honks.
+#    - honks!
+#    - honked
+#    - honked.
+#    - honked!
+#    - honking
+#    - honking.
+#    - honking!
 
 - type: emote
   id: Sigh
@@ -406,7 +406,15 @@
 - type: emote #GreyStation - Fart PR
   id: Fart
   category: Vocal
+  icon: Interface/Actions/scream.png
   chatMessages: [farts]
+  whitelist:
+    requireAll: true
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatTriggers:
     - fart
     - farts
