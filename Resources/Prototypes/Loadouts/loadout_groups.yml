@@ -1034,7 +1034,7 @@
   name: loadout-group-security-outerclothing
   loadouts:
   - ArmorVest
-  - ArmorVestSlim
+#  - ArmorVestSlim # GreyStation - Standardize sec armor
   - SecurityOfficerWintercoat
 
 #- type: loadoutGroup # GreyStation - Loadout removal
