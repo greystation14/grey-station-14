@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: GreyStation/Objects/Fun/goodie_bag.rsi
     layers:
-      - state: goodiebag
+      - state: goodie_bag
 
 - type: entity
   id: GoodieBagRandom
