@@ -1,0 +1,23 @@
+- type: entity
+  id: GoodieBagBase
+  name: goodie bag
+  description: A little bag with spooky surprises inside.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: GreyStation/Objects/Fun/goodie_bag.rsi
+    layers:
+      - state: goodiebag
+
+- type: entity
+  id: GoodieBagRandom
+  parent: [GoodieBagBase, BaseItem]
+  suffix: Filled
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      #- id: PresentTrash # Add a wrapper sprite variant for this
+      - id: Bucket
+        orGroup: GiftPool
+    sound:
+      path: /Audio/Effects/unwrap.ogg
