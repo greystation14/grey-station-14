@@ -12,12 +12,24 @@
 - type: entity
   id: GoodieBagRandom
   parent: [GoodieBagBase, BaseItem]
-  suffix: Filled
   components:
-  - type: SpawnItemsOnUse
-    items:
-      #- id: PresentTrash # Add a wrapper sprite variant for this
-      - id: Bucket
-        orGroup: GiftPool
+  - type: SpawnTableOnUse
+    table: !type:NestedSelector
+    tableId: CostumeTable
+  - type: EmitSoundOnUse
     sound:
-      path: /Audio/Effects/unwrap.ogg
+       path: /Audio/Effects/unwrap.ogg
+
+- type: entityTable
+  id: CostumeTable
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHatCatEars
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadHoodGorillaMask
+      - id: ClothingOuterGorillaSuit
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadHoodXenoHelm
+      - id: ClothingOuterXenoSuit
