@@ -15,16 +15,17 @@
   components:
   - type: SpawnTableOnUse
     table: !type:NestedSelector
-    tableId: CostumeTable
+       tableId: CostumeTable
   - type: EmitSoundOnUse
     sound:
-       path: /Audio/Effects/unwrap.ogg
+      path: /Audio/Effects/unwrap.ogg
 
 - type: entityTable
   id: CostumeTable
   table: !type:GroupSelector
     children:
     - id: ClothingHeadHatCatEars
+    - id: ClothingMaskBat
     - !type:AllSelector
       children:
       - id: ClothingHeadHoodGorillaMask
