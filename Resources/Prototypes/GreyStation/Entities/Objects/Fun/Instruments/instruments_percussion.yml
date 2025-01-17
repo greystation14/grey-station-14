@@ -20,8 +20,14 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: GreyStation/Objects/Fun/Instruments/structureinstruments.rsi
-    state: drumkit
+#    state: drumkit
     noRot: true
+    layers: # GreyStation
+      - state: drumkit
+      - map: [ enum.InstrumentVisuals.Layer ]
+        sprite: GreyStation/Effects/music_notes.rsi
+        state: music_notes
+        visible: false
   - type: Rotatable
     rotateWhileAnchored: true
   - type: Strap
