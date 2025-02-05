@@ -1,0 +1,36 @@
+- type: entity
+  id: GoodieBagBase
+  name: goodie bag
+  description: A little bag with spooky surprises inside.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: GreyStation/Objects/Fun/goodie_bag.rsi
+    layers:
+      - state: goodie_bag
+
+- type: entity
+  id: GoodieBagRandom
+  parent: [GoodieBagBase, BaseItem]
+  components:
+  - type: SpawnTableOnUse
+    table: !type:NestedSelector
+       tableId: CostumeTable
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entityTable
+  id: CostumeTable
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHatCatEars
+    - id: ClothingMaskBat
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadHoodGorillaMask
+      - id: ClothingOuterGorillaSuit
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadHoodXenoHelm
+      - id: ClothingOuterXenoSuit
