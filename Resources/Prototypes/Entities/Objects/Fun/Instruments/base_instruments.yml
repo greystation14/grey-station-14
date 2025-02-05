@@ -38,6 +38,18 @@
   - type: InteractionOutline
   - type: Sprite
     sprite: Objects/Fun/Instruments/structureinstruments.rsi
+    layers: # GreyStation - Music notes for when playing music
+      - map: [ enum.InstrumentVisuals.Layer ]
+        sprite: GreyStation/Effects/music_notes.rsi
+        state: music_notes
+        visible: false
+  - type: InstrumentVisuals # GreyStation - Music notes for when playing music
+  - type: GenericVisualizer # GreyStation - Music notes for when playing music
+    visuals:
+      enum.InstrumentVisuals.Playing:
+        enum.InstrumentVisuals.Layer:
+          False: { visible: false }
+          True: { visible: true }
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
