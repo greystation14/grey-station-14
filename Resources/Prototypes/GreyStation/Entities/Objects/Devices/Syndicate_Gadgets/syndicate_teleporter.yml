@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseItem
+  id: SyndicateTeleporter
+  name: syndicate teleporter
+  description: A reverse-engineered syndicate device that teleports the user forward a short distance.
+  components:
+  - type: Sprite
+    sprite: GreyStation/Objects/Devices/syndicate_teleporter.rsi
+    state: icon
+  - type: Item
+    sprite: GreyStation/Objects/Devices/syndicate_teleporter.rsi
+  - type: SyndicateTeleporter
+    teleportSound:
+      path: /Audio/GreyStation/Effects/electrical_short_circuit.ogg
+      params:
+        variation: 0.125
+  - type: UseDelay
+    delay: 0.5
+  - type: LimitedCharges
+    charges: 4
+    maxCharges: 4
+  - type: AutoRecharge
+    rechargeDuration: 10

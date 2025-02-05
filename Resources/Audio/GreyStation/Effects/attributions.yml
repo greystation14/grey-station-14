@@ -2,3 +2,8 @@
   license: "CC-BY-SA-3.0"
   copyright: "Taken from BeeStation13"
   source: "https://github.com/BeeStation/BeeStation-Hornet/commit/46920eeb392cc7a5c04d6a7b899fb6941dd57a52"
+
+- files: ["beeps.ogg", "electrical_short_circuit.ogg", "electrical_short_circuit2.ogg"]
+  copyright: "Taken from zvukipro.com. pofitlo-Git asked site administation for the license."
+  license: "CC-BY-NC-3.0"
+  source: "https://zvukipro.com/predmet/158-zvuk-elektrichestva.html"
